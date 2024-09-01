@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvElementoTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="C" />
+
+    <TextView
+        android:id="@+id/tvElementoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvElementoTipo"
+        app:layout_constraintStart_toEndOf="@+id/tvElementoTipo"
+        app:layout_constraintTop_toTopOf="@+id/tvElementoTipo"
+        tools:text="04/04/2000" />
+
+    <TextView
+        android:id="@+id/tvElementoDetalhe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvElementoData"
+        app:layout_constraintStart_toEndOf="@+id/tvElementoData"
+        app:layout_constraintTop_toTopOf="@+id/tvElementoData"
+        tools:text="Almoço" />
+
+    <TextView
+        android:id="@+id/tvElementoValor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/tvElementoDetalhe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvElementoDetalhe"
+        tools:text="100,00" />
+</androidx.constraintlayout.widget.ConstraintLayout>
